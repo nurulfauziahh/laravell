@@ -14,7 +14,7 @@ class AddSoftDeleteToStudents extends Migration
     public function up()
     {
         Schema::table('students', function (Blueprint $table) {
-            //
+            $table->softDeletes();
         });
     }
 
